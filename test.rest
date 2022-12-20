@@ -1,0 +1,42 @@
+###
+
+POST http://localhost:3000/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "regis3",
+    "password": "123"
+}
+###
+POST http://localhost:3000/refresh HTTP/1.1
+content-type: application/json
+
+{
+    "refreshToken": "eyJzYWx0IjoiM2U2WVp2SlY0TGE1Ti92NSIsImFzc29jRGF0YSI6ImVFVUVVVCtYcS9yOXh4VnMxY3pSMnc9PSIsImVuY3J5cHQiOiJ2ak8vUVFBZHhteWVvQmhXRllEa096TnVZSWMxZm15OVFVSlBpUUQzZFd2SEd1RTAzMmRMdzdQSCs5end3UFE4OUlBPSIsInRhZyI6Ilp0T1hzWW16bzBCSmRrdkFTd1QzbUE9PSIsImlhdCI6MTY3MTI2OTUwMCwiZXhwIjoxNjczODYxNTAwfQ.XpUw2ac1EXsjSHbfVgv9qMMvGaSIgP7HljJa2WnlO2o"
+}
+
+
+
+###
+POST http://localhost:3000/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "user1",
+    "password": "123"
+}
+
+
+{
+  "success": true,
+  "data": {
+    "accessToken": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjE1LCJ1c2VybmFtZSI6InJlZ2lzMyIsImlhdCI6MTY3MTE3NzIwNiwiZXhwIjoxNjcxMjYzNjA2fQ.ZgtDa2SIAUivSx0B4sTHpo9DrVD1GCE7Mk4zdH6BNHA",
+      "expired": "12/17/2022 14:53:26"
+    },
+    "refreshToken": {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjE1LCJ1c2VybmFtZSI6InJlZ2lzMyIsImlhdCI6MTY3MTE3NzIwNiwiZXhwIjoxNjcxMjYzNjA2fQ.ZgtDa2SIAUivSx0B4sTHpo9DrVD1GCE7Mk4zdH6BNHA",
+      "expired": "12/17/2022 14:53:26"
+    }
+  }
+}
